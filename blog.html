@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEVS REC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul id="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="p2phub.html">P2P Hub</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </nav>
+    </div>
+  <section id="blog-carousel">
+    <div class="carousel">
+      <div class="blog-card" onclick="openBlog(0)">
+        <img src="images\ai.webp" alt="Blog Image 1">
+        <h3>Why is AI not a threat to human society</h3>
+        <p>First two lines of the blog content...</p>
+      </div>
+      <div class="blog-card" onclick="openBlog(1)">
+        <img src="images\web.webp" alt="Blog Image 2">
+        <h3>How to become a web dev</h3>
+        <p>First two lines of the blog content...</p>
+      </div>
+      <div class="blog-card" onclick="openBlog(2)">
+        <img src="images\ai2.webp" alt="Blog Image 3">
+        <h3>Debugging the myth of AI as a threat to society</h3>
+        <p>First two lines of the blog content...</p>
+      </div>
+    </div>
+    <button class="arrow left-arrow" onclick="moveCarousel(-1)">&#9664;</button>
+    <button class="arrow right-arrow" onclick="moveCarousel(1)">&#9654;</button>
+  </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
